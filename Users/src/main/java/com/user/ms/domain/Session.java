@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 import org.springframework.data.redis.core.index.Indexed;
 
+//tiempo en segundos para la sesion
 @RedisHash(value = "session", timeToLive = 7200)
 public class Session implements Serializable {
 	/**
